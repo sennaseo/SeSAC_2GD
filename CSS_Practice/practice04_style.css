@@ -1,0 +1,38 @@
+textarea{
+    width: 100%;
+}
+h3:hover{
+    background-color: black;
+    color: white;
+}
+textarea:focus{
+    background-color: rgb(255, 230, 233);
+}
+input#red:checked + label{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+input#blue:checked + label{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+input#yellow:checked + label{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+button{
+    float: right;
+    padding: 5px 15px;
+    background-color: #f96666;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+button:active{
+    background-color: rgb(203, 200, 200);
+    color: #f96666;
+}
