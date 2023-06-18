@@ -1,0 +1,17 @@
+
+.stripes *:nth-child(n+1){
+    background-color: navy;
+    color: white;
+}
+.stripes *:nth-child(6){
+    background-color: yellow;
+    color: black;
+}
+.stripes *:nth-child(10){
+    background-color: yellow;
+    color: black;
+}
+.stripes *:nth-child(2){
+    background-color: yellow;
+    color: black;
+}

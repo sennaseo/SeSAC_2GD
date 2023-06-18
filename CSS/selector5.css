@@ -1,0 +1,6 @@
+.box::before {
+    content: "앞!";
+}
+.bax::after{
+    content: "뒤!";
+}
