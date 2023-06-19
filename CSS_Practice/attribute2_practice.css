@@ -1,0 +1,9 @@
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.blue:hover{
+    opacity: 0;
+}

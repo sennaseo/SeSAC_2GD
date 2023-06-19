@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>실습6 - 속성 선택자</title>
     <link rel="stylesheet" href="./practice06.css">
+    <style>
+    [disabled]{
+        background-color: red;
+    }
+    [placeholder='이름'] {
+        background-color: orange;
+    }
+    input:not([placeholder]){
+        background-color: blue;
+    }
+    </style>
 </head>
 <body>
     <input type="text" placeholder="이름" />

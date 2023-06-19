@@ -11,3 +11,6 @@
 .fruits *:nth-child(n+2){
     color: red;
 }
+.fruits *:not(span){
+    color: red;
+}
