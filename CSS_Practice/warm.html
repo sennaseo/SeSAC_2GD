@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애벌래 만들기</title>
+    <style>
+      .container {
+        position: relative;
+        height: 440px;
+        width: 500px;
+      }
+      img {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+      }
+      .body {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .body1 {
+        background-color: #020078;
+        top: 100px;
+        left: 100px;
+        position: absolute;
+      }
+      .body2 {
+        background-color: #0028c6;
+        top: 140px;
+        left: 160px;
+        position: absolute;
+      }
+      .body3 {
+        background-color: #0084ff;
+        top: 180px;
+        left: 200px;
+        position: absolute;
+      }
+      .body4 {
+        background-color: #3aa0ff;
+        top: 240px;
+        left: 240px;
+        position: absolute;
+      }
+      .body5 {
+        top: 300px;
+        left: 300px;
+        background-color: #74bcff;
+        position: absolute;
+        z-index: 15;
+      }
+      .eye-white {
+        top: 20px;
+        left: 20px;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .eye-black {
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="body body1">
+        <div class="eye-white">
+          <div class="eye-black"></div>
+        </div>
+      </div>
+      <div class="body body2"></div>
+      <div class="body body3"></div>
+      <div class="body body4"></div>
+      <div class="body body5"></div>
+
+      <img src="/CSS/img/grass.png" alt="풀" />
+    </div>
+  </body>
+</html>

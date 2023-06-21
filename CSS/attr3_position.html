@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>position</title>
+    <link rel="stylesheet" href="./att3_position.css" />
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+      }
+
+      .container div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position(static, relative, absolute, fixed)</h2>
+    <div class="position-static">static</div>
+    <div class="position-relative">relativel</div>
+    <div class="position-absolute">absolute</div>
+    <div class="position-fixed">fixed</div>
+    <div class="position-relative">
+      relative2
+      <div class="position-absolute">absolute</div>
+    </div>
+
+    <div class="parent">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+    </div>
+
+    <hr />
+    <h2>실습 쌓임 순서 밑 z-index</h2>
+    <div class="container">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+    </div>
+  </body>
+</html>

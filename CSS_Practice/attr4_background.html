@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 배경 적용하기</title>
+    <link rel="stylesheet" href="./attr4_background.css" />
+    <style>
+      .insta {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-image: linear-gradient(
+          to right,
+          red 0%,
+          orange 50%,
+          purple 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid white;
+        background-image: url(/CSS/img/pooh.png);
+        position: absolute;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+    </div>
+    <br />
+    <hr />
+
+    <hr />
+    <h2>background</h2>
+    <div class="insta">
+      <div class="img"></div>
+    </div>
+  </body>
+</html>

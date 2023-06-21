@@ -1,0 +1,50 @@
+.div1 {
+  width: 800px;
+  height: 500px;
+  background-color: skyblue;
+  background-image: url(/CSS/img/라이옹.png);
+
+  background-position: center;
+  background-repeat: repeat-x;
+}
+.div2 {
+  width: 800px;
+  height: 500px;
+  background-color: skyblue;
+  background-image: url(/CSS/img/라이옹.png);
+
+  background-position: 100px 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.div3 {
+  width: 800px;
+  height: 500px;
+  background-color: skyblue;
+  background-image: url(/CSS/img/라이옹.png);
+
+  background-size: cover;
+}
+
+.insta {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, red 0%, orange 50%, purple 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid white;
+  background-image: url(/CSS/img/small.png);
+  position: absolute;
+  background-size: cover;
+}
