@@ -25,26 +25,3 @@
 
   background-size: cover;
 }
-
-.insta {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background-image: linear-gradient(to right, red 0%, orange 50%, purple 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border-radius: 50%;
-  background-color: white;
-  border: 3px solid white;
-  background-image: url(/CSS/img/small.png);
-  position: absolute;
-  background-size: cover;
-}
