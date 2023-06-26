@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습1 크기에따라 자리바꾸기</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .container .box {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        margin: 10px;
+        border-radius: 10%;
+        border: 1px solid red;
+      }
+      @media screen and (max-width: 700px) {
+        .container {
+          /* display: flex; */
+          flex-direction: row;
+        }
+        .container .box {
+          background-color: #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

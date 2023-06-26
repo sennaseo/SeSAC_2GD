@@ -1,0 +1,140 @@
+/*transition vs. animation
+    - transition
+        - hover, onclick, active, 등의 이벤트에 의해 발생됨
+    - animation
+        - '중간 스탭' 을 지정해 보다 세밀한 스타일 전환 가능
+        - keyframes 를 사용
+*/
+.body {
+  width: 2000px;
+  height: 2000px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: aqua;
+  position: relative;
+
+  animation-name: box;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+
+@keyframes box {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: 200px;
+  }
+  75% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.ball {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+
+  /* 단축 속성 */
+  /* animation: bouncel 1s ease-out infinite alternate; */
+}
+
+@keyframes bouncel {
+  to {
+    top: 0px;
+  }
+  from {
+    top: 300px;
+  }
+}
+
+.ball2 {
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+  position: absolute;
+  left: 200px;
+  border-radius: 50%;
+
+  /* animation */
+  /* animation: bounce2 5s infinite; */
+}
+
+@keyframes bounce2 {
+  to,
+  from {
+    bottom: 0px;
+    animation-timing-function: ease-out;
+    background-color: yellow;
+  }
+  50% {
+    bottom: 300px;
+    animation-timing-function: ease-in;
+    background-color: red;
+  }
+}
+.text {
+  position: absolute;
+  animation-name: textmove;
+  animation-duration: 2s;
+}
+
+@keyframes textmove {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.ball3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: relative;
+  border-radius: 50%;
+
+  animation: bounce3 5s ease-in infinite;
+}
+
+@keyframes bounce3 {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 500px;
+    left: 0px;
+  }
+  50% {
+    top: 500px;
+    left: 1000px;
+    bottom: 0px;
+  }
+  75% {
+    top: 0px;
+    left: 1000px;
+    bottom: 500px;
+    right: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    bottom: 500px;
+    right: 1000px;
+  }
+}
