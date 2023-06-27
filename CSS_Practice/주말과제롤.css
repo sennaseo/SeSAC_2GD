@@ -39,17 +39,14 @@ body {
 
 .container .heroes .hero:hover {
   background-color: #ff9c00;
-  z-index: 1;
   color: #ff9c00;
+  border: 4px solid #ff9c00;
 }
 
 .container .heroes .hero a {
   color: #333;
   text-decoration: none;
-  line-height: 2em;
-}
-.container .heroes .hero:hover {
-  border: 5px solid #ff9c00;
+  line-height: 3em;
 }
 
 .container .heroes .hero:hover a {
