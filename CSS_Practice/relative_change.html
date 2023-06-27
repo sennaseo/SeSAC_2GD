@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>실습1 크기에따라 자리바꾸기</title>
+    <title>반응형1</title>
     <style>
       .container {
         display: flex;
@@ -12,18 +12,18 @@
       .container .box {
         width: 100px;
         height: 100px;
-        background-color: skyblue;
-        margin: 10px;
-        border-radius: 10%;
         border: 1px solid red;
+        background-color: black;
+        border-radius: 5px;
+        margin: 10px;
       }
-      @media screen and (max-width: 700px) {
+      @media screen and (min-width: 700px) {
         .container {
           /* display: flex; */
           flex-direction: row;
         }
         .container .box {
-          background-color: #000;
+          background-color: skyblue;
         }
       }
     </style>

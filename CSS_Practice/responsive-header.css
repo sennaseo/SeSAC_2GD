@@ -50,7 +50,6 @@ header .small-menu {
 
 /* 미디어 쿼리 작성 768px 이하일 때 */
 @media screen and (max-width: 768px) {
-  /*  */
   header {
     height: 60px;
   }
@@ -69,13 +68,13 @@ header .small-menu {
     display: block;
   }
   header .small-menu li {
-    background-color: blue;
+    background-color: aliceblue;
     height: 40px;
     line-height: 40px;
     text-align: center;
   }
   header .small-menu li:hover {
-    background-color: red;
+    background-color: rgb(88, 136, 155);
     color: #fff;
     cursor: pointer;
   }
