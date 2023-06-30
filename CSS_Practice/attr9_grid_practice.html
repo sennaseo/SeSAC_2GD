@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid 실습1</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: repeat(3, 50px);
+      }
+      .container > .item1 {
+        background-color: #f94144;
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      .container > .item2 {
+        background-color: #f3722c;
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .container > .item3 {
+        background-color: #f9c74f;
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .container > .item4 {
+        background-color: #43aa8b;
+        grid-column-start: 5;
+        grid-column-end: 6;
+
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .container > .item5 {
+        background-color: #f8961e;
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      .container > .item6 {
+        background-color: #90be6d;
+        grid-column-start: 4;
+        grid-column-end: 5;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      .container > .item7 {
+        background-color: #4444ff;
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">#F94144</div>
+      <div class="item item2">#F3722C</div>
+      <div class="item item3">#F9C74F</div>
+      <div class="item item4">#43AA8B</div>
+      <div class="item item5">#F8961E</div>
+      <div class="item item6">#90BE6D</div>
+      <div class="item item7">#4444FF</div>
+    </div>
+  </body>
+</html>
