@@ -88,7 +88,7 @@
     <script>
       // TODO: 문제 조건을 만족하는 js 코드 작성
       // (참고) article-box, img-box, text-center 클래스에 대한 스타일시트는 haed > style 태그에 이미 정의되어 있습니다.
-
+      // article > img > src
       const section = document.querySelector("section");
       const icecreams = [
         "내가 아인슈페너?!",
@@ -101,6 +101,30 @@
         "뮤! 넌 내거야",
         "오레오 쿠키 앤 크림",
       ];
+
+      for (let i = 0; i < icecreams.length; i++) {
+        const article = document.createElement("article");
+        const img = document.createElement("img");
+        const h3 = document.createElement("h3");
+        const name = document.createElement("div");
+
+        // img
+        img.setAttribute("src", `./icecream${i + 1}`);
+        img.setAttribute("alt", `icecream${i + 1} 사진`);
+
+        img.classList.add("img-box");
+        // h3
+        h3.textContent = `Top${i + 1}`;
+        h3.classList.add("text-center");
+
+        //div
+        name.innerText = icecreams[i];
+        name.classList.add("text-center");
+
+        article.append(img, h3, name);
+        article.classList.add("article-box");
+        section.append(article);
+      }
     </script>
   </body>
 </html>
