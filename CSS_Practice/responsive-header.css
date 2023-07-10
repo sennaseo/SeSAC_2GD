@@ -7,11 +7,14 @@ ul {
   list-style: none;
 }
 
+header .click {
+}
 /* HEADER */
 header {
   width: 100%;
   height: 100px;
   background-color: lightblue;
+  z-index: 100;
   position: fixed;
 }
 
@@ -48,6 +51,11 @@ header .small-menu {
   display: none;
 }
 
+/* 메뉴바 추가 */
+svg {
+  display: none;
+}
+
 /* 미디어 쿼리 작성 768px 이하일 때 */
 @media screen and (max-width: 768px) {
   header {
@@ -64,9 +72,13 @@ header .small-menu {
   }
 
   /* small menu */
+  header .click {
+    display: block;
+  }
   header .small-menu {
     display: block;
   }
+
   header .small-menu li {
     background-color: aliceblue;
     height: 40px;
@@ -76,6 +88,16 @@ header .small-menu {
   header .small-menu li:hover {
     background-color: rgb(88, 136, 155);
     color: #fff;
+    cursor: pointer;
+  }
+
+  /* 메뉴바 추가 */
+  svg {
+    display: block;
+    position: absolute;
+    right: 5vw;
+    bottom: 38%;
+    color: whitesmoke;
     cursor: pointer;
   }
 }
