@@ -64,7 +64,7 @@ $(window).scroll(() => {
 /* key event */
 // keydown : 키보드가 눌렸을 때!
 $(".input-key").keydown(function (e) {
-  console.log(e);
+  // console.log(e);
   console.log(e.code);
   if (e.code === "ArrowUp") {
     console.log("up");
